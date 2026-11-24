@@ -1,0 +1,14 @@
+{
+  "name": "zaki-portfolio",
+  "version": "1.0.0",
+  "description": "Zaki.co - High-Converting Static Ads & Persuasive Copy",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}

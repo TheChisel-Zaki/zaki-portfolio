@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Zaki.co — High-Converting Static Ads & Persuasive Copy</title>
+  <meta name="description" content="High-converting static ad creatives and persuasive copy for solo founders, e-commerce brands, and marketing agencies. Drop CAC and scale ROAS.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#191c1e',
+            charcoal: '#393e41',
+            charcoalBorder: '#4f5559',
+            fieryRed: '#e94f37',
+            fieryDark: '#cf3f27',
+            arcticWhite: '#f6f7eb',
+            surface: '#232729',
+            card: '#2b3033',
+            borderSubtle: 'rgba(246, 247, 235, 0.08)',
+            borderBright: 'rgba(79, 85, 89, 0.6)',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Cal.com Official Web Embed Script -->
+  <script>
+    (function (C, A, L) { 
+      let p = function (a, ar) { a.q.push(ar); }; 
+      let d = C.document; 
+      C.Cal = C.Cal || function () { 
+        let cal = C.Cal; 
+        let ar = arguments; 
+        if (!cal.loaded) { 
+          cal.ns = {}; 
+          cal.q = cal.q || []; 
+          let s = d.createElement("script"); 
+          s.src = A; 
+          s.async = true; 
+          d.head.appendChild(s); 
+          cal.loaded = true; 
+        } 
+        if (ar[0] === L) { 
+          const api = function () { p(api, arguments); }; 
+          const namespace = ar[1]; 
+          api.q = api.q || []; 
+          if(typeof namespace === "string"){
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar); 
+          return;
+        } 
+        p(cal, ar); 
+      }; 
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", {origin:"https://cal.com"});
+    Cal("ui", {"theme":"dark","styles":{"branding":{"brandColor":"#e94f37"}}});
+  </script>
+
+  <!-- Embedded Dynamic Fiery Arctic Midnight & Animation Styles -->
+  <style>
+    :root {
+      --bg-primary: #191c1e;
+      --bg-secondary: #232729;
+      --bg-card: #2b3033;
+      --border-subtle: rgba(246, 247, 235, 0.08);
+      --border-medium: rgba(79, 85, 89, 0.5);
+      --border-fiery: rgba(233, 79, 55, 0.45);
+      --accent-fiery: #e94f37;
+      --accent-fiery-hover: #f2624b;
+      --text-arctic: #f6f7eb;
+      --text-muted: #abb1a6;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-primary);
+      background-image: 
+        radial-gradient(at 15% 12%, rgba(233, 79, 55, 0.12) 0px, transparent 45%),
+        radial-gradient(at 88% 30%, rgba(233, 79, 55, 0.08) 0px, transparent 50%),
+        radial-gradient(at 50% 85%, rgba(57, 62, 65, 0.45) 0px, transparent 55%);
+      background-attachment: fixed;
+      color: var(--text-arctic);
+      overflow-x: hidden;
+    }
+
+    .glass-panel {
+      background: linear-gradient(180deg, rgba(43, 48, 51, 0.85) 0%, rgba(31, 35, 37, 0.92) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(246, 247, 235, 0.1);
+      box-shadow: inset 0 1px 1px 0 rgba(246, 247, 235, 0.12), 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    .glass-nav {
+      background: rgba(25, 28, 30, 0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(246, 247, 235, 0.07);
+    }
+
+    .interactive-card {
+      background: linear-gradient(180deg, rgba(43, 48, 51, 0.75) 0%, rgba(31, 35, 37, 0.9) 100%);
+      border: 1px solid rgba(246, 247, 235, 0.08);
+      box-shadow: inset 0 1px 0 0 rgba(246, 247, 235, 0.1), 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.35s ease, 
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .interactive-card:hover {
+      border-color: rgba(233, 79, 55, 0.45);
+      box-shadow: inset 0 1px 0 0 rgba(246, 247, 235, 0.18), 0 24px 48px -12px rgba(233, 79, 55, 0.18);
+      transform: translateY(-4px);
+    }
+
+    .btn-fiery {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #e94f37 0%, #f05d47 100%);
+      color: #f6f7eb;
+      box-shadow: 0 0 24px -2px rgba(233, 79, 55, 0.42), 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                  background 0.25s ease;
+    }
+
+    .btn-fiery::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -70%;
+      width: 25%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(246, 247, 235, 0.28), transparent);
+      transform: rotate(25deg);
+      transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+
+    .btn-fiery:hover::after {
+      left: 140%;
+    }
+
+    .btn-fiery:hover {
+      background: linear-gradient(135deg, #f05d47 0%, #f7705c 100%);
+      box-shadow: 0 0 36px 2px rgba(233, 79, 55, 0.6), 0 8px 20px rgba(0, 0, 0, 0.35);
+      transform: translateY(-1.5px) scale(1.015);
+    }
+
+    .btn-fiery:active {
+      transform: translateY(0.5px) scale(0.985);
+      box-shadow: 0 0 16px -2px rgba(233, 79, 55, 0.35);
+    }
+
+    @keyframes ambientBreathe {
+      0%, 100% {
+        opacity: 0.14;
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        opacity: 0.24;
+        transform: translate(-50%, -50%) scale(1.08);
+      }
+    }
+
+    .ambient-aura {
+      animation: ambientBreathe 7s ease-in-out infinite;
+    }
+
+    @keyframes sonarPulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.85;
+      }
+      100% {
+        transform: scale(2.6);
+        opacity: 0;
+      }
+    }
+
+    .sonar-wrapper {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sonar-ring {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 9999px;
+      background-color: #e94f37;
+      animation: sonarPulse 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    /* Subtle Scroll-Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), 
+                  transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-100 { transition-delay: 80ms; }
+    .delay-200 { transition-delay: 160ms; }
+    .delay-300 { transition-delay: 240ms; }
+    .delay-400 { transition-delay: 320ms; }
+
+    .text-gradient-fiery {
+      background: linear-gradient(135deg, #f6f7eb 25%, #e94f37 80%, #cf3f27 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #191c1e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #393e41;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e94f37;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .ambient-aura,
+      .sonar-ring {
+        animation: none !important;
+      }
+      .btn-fiery::after {
+        display: none !important;
+      }
+    }
+
+    button, a {
+      touch-action: manipulation;
+    }
+  </style>
+</head>
+<body class="bg-[#191c1e] text-[#f6f7eb] antialiased selection:bg-[#e94f37]/30 selection:text-[#f6f7eb] min-h-screen flex flex-col">
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 w-full glass-nav px-4 sm:px-8 py-3.5 transition-all">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- Brand Logo & Live Sonar Availability Dot -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-[#272c2e]/90 border border-[#f6f7eb]/10 flex items-center justify-center font-display font-bold text-[#f6f7eb] text-base tracking-tight group-hover:border-[#e94f37] transition-all shadow-sm">
+          Z
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-lg tracking-tight text-[#f6f7eb] leading-none">Zaki<span class="text-[#e94f37]">.co</span></span>
+          <div class="flex items-center gap-1.5 mt-0.5">
+            <span class="sonar-wrapper w-2 h-2">
+              <span class="sonar-ring"></span>
+              <span class="relative w-1.5 h-1.5 rounded-full bg-[#e94f37]"></span>
+            </span>
+            <span class="text-[10px] text-[#abb1a6] uppercase tracking-wider font-semibold">Available for Q4</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 text-xs tracking-wide uppercase font-semibold text-[#abb1a6]">
+        <a href="#work" class="hover:text-white transition-colors">Proven Creatives</a>
+        <a href="#offer" class="hover:text-white transition-colors">The Offer</a>
+        <a href="#process" class="hover:text-white transition-colors">How It Works</a>
+      </nav>
+
+      <!-- Primary CTA in Nav -->
+      <button 
+        onclick="openScheduler()"
+        class="btn-fiery flex items-center gap-2 px-4 py-2 rounded-full font-bold text-xs sm:text-sm tracking-tight cursor-pointer"
+      >
+        <span>⚡ Book a Call</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-1">
+
+    <!-- ================= 1. HERO SECTION (MUST-HAVE FEATURE #1) ================= -->
+    <section id="hero" class="relative pt-12 pb-16 sm:pt-20 sm:pb-24 px-4 sm:px-6 overflow-hidden">
+      <!-- Breathing Ambient Aura Glow -->
+      <div class="ambient-aura absolute top-1/3 left-1/2 w-[340px] h-[340px] sm:w-[580px] sm:h-[580px] bg-[#e94f37] rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+      <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+        <!-- Eyebrow Badge -->
+        <div class="reveal inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#272c2e]/80 border border-[#f6f7eb]/10 text-[#f6f7eb] text-xs font-semibold tracking-wide uppercase mb-6 shadow-sm backdrop-blur-md">
+          <span class="sonar-wrapper w-2 h-2">
+            <span class="sonar-ring"></span>
+            <span class="relative w-1.5 h-1.5 rounded-full bg-[#e94f37]"></span>
+          </span>
+          <span class="text-zinc-200">Static Ads & Persuasive Copy</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="reveal delay-100 text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#f6f7eb] leading-[1.12] max-w-3xl mb-6">
+          Stop burning ad spend on creatives that get <span class="text-gradient-fiery">scrolled past.</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="reveal delay-200 text-base sm:text-lg md:text-xl text-[#abb1a6] leading-relaxed max-w-2xl mb-8 font-normal">
+          I design high-converting static ad creatives and write persuasive copy for <strong>solo founders</strong>, <strong>e-commerce brands</strong>, and <strong>marketing agencies</strong> looking to drop CAC and scale ROAS.
+        </p>
+
+        <!-- Primary Actions -->
+        <div class="reveal delay-300 w-full sm:w-auto flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12">
+          <button 
+            onclick="openScheduler()"
+            class="btn-fiery w-full sm:w-auto min-h-[50px] px-8 py-3.5 rounded-xl font-extrabold text-base tracking-tight flex items-center justify-center gap-2.5 cursor-pointer"
+          >
+            <span>⚡ Book 15-Min Discovery Call</span>
+          </button>
+          
+          <a 
+            href="#work"
+            class="w-full sm:w-auto min-h-[50px] px-6 py-3.5 rounded-xl bg-[#272c2e]/60 hover:bg-[#343a3d] text-[#abb1a6] hover:text-[#f6f7eb] border border-[#f6f7eb]/10 text-sm font-semibold tracking-tight transition-all flex items-center justify-center gap-2 cursor-pointer backdrop-blur-sm"
+          >
+            <span>View Proven Angles</span>
+            <svg class="w-4 h-4 text-[#abb1a6]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Key Metrics Strip with Counting Numbers -->
+        <div id="metrics-strip" class="reveal delay-400 w-full grid grid-cols-3 gap-2 sm:gap-4 max-w-xl mx-auto pt-6 border-t border-[#f6f7eb]/10">
+          <div class="flex flex-col items-center p-3 sm:p-3.5 rounded-xl bg-[#272c2e]/50 border border-[#f6f7eb]/08 shadow-sm backdrop-blur-sm">
+            <span class="stat-counter text-xl sm:text-2xl font-bold font-display text-[#e94f37]" data-target="38" data-prefix="+" data-suffix="%">+38%</span>
+            <span class="text-[11px] sm:text-xs text-[#abb1a6] text-center mt-0.5 font-medium">Avg. CTR Boost</span>
+          </div>
+          <div class="flex flex-col items-center p-3 sm:p-3.5 rounded-xl bg-[#272c2e]/50 border border-[#f6f7eb]/08 shadow-sm backdrop-blur-sm">
+            <span class="stat-counter text-xl sm:text-2xl font-bold font-display text-[#f6f7eb]" data-target="3.4" data-prefix="" data-suffix="x" data-decimals="1">3.4x</span>
+            <span class="text-[11px] sm:text-xs text-[#abb1a6] text-center mt-0.5 font-medium">Blended ROAS</span>
+          </div>
+          <div class="flex flex-col items-center p-3 sm:p-3.5 rounded-xl bg-[#272c2e]/50 border border-[#f6f7eb]/08 shadow-sm backdrop-blur-sm">
+            <span class="stat-counter text-xl sm:text-2xl font-bold font-display text-[#e94f37]" data-target="48" data-prefix="" data-suffix="h">48h</span>
+            <span class="text-[11px] sm:text-xs text-[#abb1a6] text-center mt-0.5 font-medium">Sprint Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. CREATIVE SHOWCASE (MUST-HAVE FEATURE #2) ================= -->
+    <section id="work" class="py-16 sm:py-24 px-4 sm:px-6 bg-[#16181a]/70 border-y border-[#f6f7eb]/08">
+      <div class="max-w-5xl mx-auto">
+        <!-- Section Header -->
+        <div class="reveal flex flex-col sm:flex-row sm:items-end justify-between mb-10 sm:mb-14 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-[#e94f37] text-xs font-bold uppercase tracking-wider mb-2">
+              <span>✦ Proof of Performance</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-[#f6f7eb] tracking-tight">
+              Selected Ad Creatives & Winning Angles
+            </h2>
+          </div>
+          <p class="text-sm text-[#abb1a6] max-w-xs">
+            Every ad is built around psychological hooks, high visual contrast, and measurable conversion goals.
+          </p>
+        </div>
+
+        <!-- 3 Showcase Cards Grid with Staggered Entrance -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- PROJECT 1: NIMBAO -->
+          <div class="reveal delay-100 interactive-card group rounded-2xl flex flex-col overflow-hidden">
+            <div class="relative w-full aspect-square overflow-hidden border-b border-[#f6f7eb]/08 bg-[#16181a] flex items-center justify-center">
+              <img 
+                src="./images/nimbao-cover.png" 
+                alt="Nimbao Ad Creatives" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3 z-10">
+                <span class="px-2.5 py-1 rounded-full bg-[#191c1e]/80 text-[#f6f7eb] border border-[#f6f7eb]/15 text-[10px] font-bold tracking-wide uppercase backdrop-blur-md shadow-sm">
+                  DTC E-Commerce
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 z-10">
+                <span class="px-2 py-0.5 rounded bg-[#191c1e]/80 text-[#abb1a6] border border-[#f6f7eb]/10 text-[10px] font-mono backdrop-blur-md">
+                  1:1 Feed
+                </span>
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-bold text-[#f6f7eb] text-base">Nimbao Performance Ads</h3>
+                  <span class="px-2 py-0.5 rounded bg-[#e94f37]/15 text-[#e94f37] border border-[#e94f37]/30 text-[11px] font-bold font-mono">
+                    ROAS 4.3x
+                  </span>
+                </div>
+                <p class="text-xs text-[#abb1a6] leading-relaxed mb-4">
+                  High-impact static ad creatives engineered to stop the feed scroll, highlight key product benefits, and scale acquisition.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-[#f6f7eb]/08 flex items-center justify-between text-xs">
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">CTR</span>
+                  <span class="text-[#f6f7eb] font-mono font-semibold">4.6%</span>
+                </div>
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">CPA</span>
+                  <span class="text-[#e94f37] font-mono font-semibold">-32%</span>
+                </div>
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">Angle</span>
+                  <span class="text-[#abb1a6] font-mono">Problem-Solution</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: VAULTA -->
+          <div class="reveal delay-200 interactive-card group rounded-2xl flex flex-col overflow-hidden">
+            <div class="relative w-full aspect-square overflow-hidden border-b border-[#f6f7eb]/08 bg-[#16181a] flex items-center justify-center">
+              <img 
+                src="./images/vaulta-cover.png" 
+                alt="Vaulta Ad Creatives" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3 z-10">
+                <span class="px-2.5 py-1 rounded-full bg-[#191c1e]/80 text-[#f6f7eb] border border-[#f6f7eb]/15 text-[10px] font-bold tracking-wide uppercase backdrop-blur-md shadow-sm">
+                  B2B & FinTech
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 z-10">
+                <span class="px-2 py-0.5 rounded bg-[#191c1e]/80 text-[#abb1a6] border border-[#f6f7eb]/10 text-[10px] font-mono backdrop-blur-md">
+                  4:5 Portrait
+                </span>
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-bold text-[#f6f7eb] text-base">Vaulta Ad Creatives</h3>
+                  <span class="px-2 py-0.5 rounded bg-[#e94f37]/15 text-[#e94f37] border border-[#e94f37]/30 text-[11px] font-bold font-mono">
+                    Demos +64%
+                  </span>
+                </div>
+                <p class="text-xs text-[#abb1a6] leading-relaxed mb-4">
+                  Direct-response portrait ad designs focused on trust, sleek product visualization, and high-converting acquisition hooks.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-[#f6f7eb]/08 flex items-center justify-between text-xs">
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">CTR</span>
+                  <span class="text-[#f6f7eb] font-mono font-semibold">3.8%</span>
+                </div>
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">CPL</span>
+                  <span class="text-[#e94f37] font-mono font-semibold">-28%</span>
+                </div>
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">Angle</span>
+                  <span class="text-[#abb1a6] font-mono">Feature Callout</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: PRIMELAND REALTY -->
+          <div class="reveal delay-300 interactive-card group rounded-2xl flex flex-col overflow-hidden">
+            <div class="relative w-full aspect-square overflow-hidden border-b border-[#f6f7eb]/08 bg-[#16181a] flex items-center justify-center">
+              <img 
+                src="./images/primeland-cover.png" 
+                alt="PrimeLand Realty Designs" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3 z-10">
+                <span class="px-2.5 py-1 rounded-full bg-[#191c1e]/80 text-[#f6f7eb] border border-[#f6f7eb]/15 text-[10px] font-bold tracking-wide uppercase backdrop-blur-md shadow-sm">
+                  Real Estate Branding
+                </span>
+              </div>
+              <div class="absolute top-3 right-3 z-10">
+                <span class="px-2 py-0.5 rounded bg-[#191c1e]/80 text-[#abb1a6] border border-[#f6f7eb]/10 text-[10px] font-mono backdrop-blur-md">
+                  1:1 Feed & Story
+                </span>
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-bold text-[#f6f7eb] text-base">PrimeLand Realty Designs</h3>
+                  <span class="px-2 py-0.5 rounded bg-[#e94f37]/15 text-[#e94f37] border border-[#e94f37]/30 text-[11px] font-bold font-mono">
+                    Engagement +85%
+                  </span>
+                </div>
+                <p class="text-xs text-[#abb1a6] leading-relaxed mb-4">
+                  Modern, authoritative social media graphics and property promotion creatives designed to attract high-intent buyers and sellers.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-[#f6f7eb]/08 flex items-center justify-between text-xs">
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">Leads</span>
+                  <span class="text-[#f6f7eb] font-mono font-semibold">+42%</span>
+                </div>
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">Reach</span>
+                  <span class="text-[#e94f37] font-mono font-semibold">3.5x</span>
+                </div>
+                <div>
+                  <span class="text-[#abb1a6] block text-[10px] uppercase font-bold">Angle</span>
+                  <span class="text-[#abb1a6] font-mono">Social Proof</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Dynamic Callout Banner Below Work -->
+        <div class="reveal delay-200 mt-10 p-5 rounded-2xl glass-panel flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-center sm:text-left">
+            <span class="font-bold text-[#f6f7eb] text-sm">Need creative variations tested for your offer?</span>
+            <p class="text-xs text-[#abb1a6] mt-0.5">I deliver 3+ hook and visual variations per batch so your media buyers have winners to scale.</p>
+          </div>
+          <button 
+            onclick="openScheduler()"
+            class="btn-fiery px-5 py-2.5 rounded-xl font-bold text-xs tracking-tight cursor-pointer whitespace-nowrap"
+          >
+            Book Discovery Call →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. THE OFFER & HOW IT WORKS (MUST-HAVE FEATURE #3) ================= -->
+    <section id="offer" class="py-16 sm:py-24 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="reveal text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <div class="inline-flex items-center gap-2 text-[#e94f37] text-xs font-bold uppercase tracking-wider mb-2">
+            <span>✦ Clear Deliverables</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-[#f6f7eb] tracking-tight mb-3">
+            What You Get When We Work Together
+          </h2>
+          <p class="text-sm sm:text-base text-[#abb1a6]">
+            No endless revision loops or bloated contracts. Just production-ready ad creatives engineered to win auctions.
+          </p>
+        </div>
+
+        <!-- 3 Offer Deliverables Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div class="reveal delay-100 interactive-card p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-[#e94f37]/15 border border-[#e94f37]/30 text-[#e94f37] flex items-center justify-center mb-4 shadow-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              </div>
+              <h3 class="font-bold text-[#f6f7eb] text-lg mb-2">Batch Static Creatives</h3>
+              <p class="text-xs sm:text-sm text-[#abb1a6] leading-relaxed">
+                Exported in 1:1 Feed, 9:16 Story/Reel, and 4:5 portrait formats. Optimized typography and hierarchy for mobile screen scanning.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#f6f7eb]/08 text-xs text-[#abb1a6] flex items-center gap-2">
+              <span class="text-[#e94f37]">✓</span> Meta, TikTok & LinkedIn Ready
+            </div>
+          </div>
+
+          <div class="reveal delay-200 interactive-card p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-[#e94f37]/15 border border-[#e94f37]/30 text-[#e94f37] flex items-center justify-center mb-4 shadow-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+              </div>
+              <h3 class="font-bold text-[#f6f7eb] text-lg mb-2">Persuasive Copy & Angles</h3>
+              <p class="text-xs sm:text-sm text-[#abb1a6] leading-relaxed">
+                Great visuals fail without strong hooks. Every creative includes tailored headline variations, primary text, and hook angles ready to test.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#f6f7eb]/08 text-xs text-[#abb1a6] flex items-center gap-2">
+              <span class="text-[#e94f37]">✓</span> 3+ Hook Angles Per Concept
+            </div>
+          </div>
+
+          <div class="reveal delay-300 interactive-card p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-[#e94f37]/15 border border-[#e94f37]/30 text-[#e94f37] flex items-center justify-center mb-4 shadow-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <h3 class="font-bold text-[#f6f7eb] text-lg mb-2">Rapid 48h Turnaround</h3>
+              <p class="text-xs sm:text-sm text-[#abb1a6] leading-relaxed">
+                Fast execution so your paid traffic never stalls. Direct communication via Slack, WhatsApp, or email without middle management.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-[#f6f7eb]/08 text-xs text-[#abb1a6] flex items-center gap-2">
+              <span class="text-[#e94f37]">✓</span> Quick Iterations & Direct Access
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Step Process with Staggered Entrance -->
+        <div id="process" class="pt-8 border-t border-[#f6f7eb]/08">
+          <div class="reveal text-center mb-10">
+            <h3 class="text-xl sm:text-2xl font-bold text-[#f6f7eb]">How It Works in 3 Steps</h3>
+            <p class="text-xs sm:text-sm text-[#abb1a6] mt-1">Simple, friction-free engagement designed for busy operators.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="reveal delay-100 interactive-card p-5 rounded-xl flex flex-col">
+              <span class="w-7 h-7 rounded-full bg-[#e94f37]/20 text-[#f6f7eb] border border-[#e94f37]/40 flex items-center justify-center font-bold font-mono text-xs mb-3 shadow-inner">1</span>
+              <h4 class="font-bold text-[#f6f7eb] text-base mb-1">15-Min Intro Call</h4>
+              <p class="text-xs text-[#abb1a6] leading-relaxed">
+                We review your current ad performance, target audience, and winning offers to pinpoint high-probability angles.
+              </p>
+            </div>
+
+            <div class="reveal delay-200 interactive-card p-5 rounded-xl flex flex-col">
+              <span class="w-7 h-7 rounded-full bg-[#e94f37]/20 text-[#f6f7eb] border border-[#e94f37]/40 flex items-center justify-center font-bold font-mono text-xs mb-3 shadow-inner">2</span>
+              <h4 class="font-bold text-[#f6f7eb] text-base mb-1">Strategy & Copy Brief</h4>
+              <p class="text-xs text-[#abb1a6] leading-relaxed">
+                I map out the copy hooks, headline variations, and visual concepts for your approval before pixel production begins.
+              </p>
+            </div>
+
+            <div class="reveal delay-300 interactive-card p-5 rounded-xl flex flex-col">
+              <span class="w-7 h-7 rounded-full bg-[#e94f37]/20 text-[#f6f7eb] border border-[#e94f37]/40 flex items-center justify-center font-bold font-mono text-xs mb-3 shadow-inner">3</span>
+              <h4 class="font-bold text-[#f6f7eb] text-base mb-1">Delivery & Scaling</h4>
+              <p class="text-xs text-[#abb1a6] leading-relaxed">
+                You get production-ready static assets in Google Drive/Figma ready to drop directly into your ad manager.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA SECTION ================= -->
+    <section class="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-transparent to-[#16181a]">
+      <div class="reveal max-w-4xl mx-auto rounded-3xl p-8 sm:p-12 glass-panel text-center relative overflow-hidden">
+        <div class="ambient-aura absolute -top-24 -right-24 w-80 h-80 bg-[#e94f37] rounded-full blur-[100px] pointer-events-none"></div>
+
+        <span class="text-[#e94f37] font-bold uppercase tracking-wider text-xs mb-2 block font-mono">
+          Ready to lower CAC & scale spend?
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-[#f6f7eb] tracking-tight mb-4 max-w-xl mx-auto">
+          Let's build high-converting creatives for your next sprint.
+        </h2>
+        <p class="text-sm sm:text-base text-[#abb1a6] max-w-md mx-auto mb-8">
+          Book a quick 15-minute discovery call to review your current ad creative strategy and see if we're a fit.
+        </p>
+
+        <button 
+          onclick="openScheduler()"
+          class="btn-fiery w-full sm:w-auto px-8 py-4 rounded-xl font-extrabold text-base tracking-tight cursor-pointer"
+        >
+          ⚡ Book Your 15-Min Intro Call
+        </button>
+
+        <div class="mt-4 flex items-center justify-center gap-2 text-xs text-[#abb1a6]">
+          <span class="sonar-wrapper w-2 h-2">
+            <span class="sonar-ring"></span>
+            <span class="relative w-1.5 h-1.5 rounded-full bg-[#e94f37]"></span>
+          </span>
+          <span>Zero pressure • No long-term lock-in required</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-[#f6f7eb]/08 bg-[#16181a] px-4 sm:px-8 py-8 text-xs text-[#abb1a6]">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-2 font-display font-bold text-[#f6f7eb] text-sm">
+        <span>Zaki<span class="text-[#e94f37]">.co</span></span>
+        <span class="text-[#abb1a6]/60">|</span>
+        <span class="text-[#abb1a6] font-sans font-normal text-xs">High-Converting Ad Creatives</span>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">
+        <a href="mailto:zachijoo2@gmail.com" class="hover:text-[#f6f7eb] transition-colors flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 text-[#e94f37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <span>zachijoo2@gmail.com</span>
+        </a>
+        <span class="text-[#abb1a6]/40 hidden sm:inline">•</span>
+        <a href="https://x.com/designsbyzaki" target="_blank" rel="noopener noreferrer" class="hover:text-[#f6f7eb] transition-colors">X</a>
+        <a href="https://www.linkedin.com/in/designsbyzaki/" target="_blank" rel="noopener noreferrer" class="hover:text-[#f6f7eb] transition-colors">LinkedIn</a>
+        <a href="https://www.instagram.com/designsbyzaki/" target="_blank" rel="noopener noreferrer" class="hover:text-[#f6f7eb] transition-colors">Instagram</a>
+        <a href="https://www.behance.net/josiahzaki" target="_blank" rel="noopener noreferrer" class="hover:text-[#f6f7eb] transition-colors">Behance</a>
+      </div>
+
+      <div>
+        © 2026 Zaki.co. Built for performance.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MOBILE STICKY BOTTOM BAR ================= -->
+  <div 
+    id="mobile-bottom-bar" 
+    class="fixed bottom-0 left-0 right-0 z-40 p-3 sm:hidden glass-nav border-t border-[#f6f7eb]/10 transform translate-y-full opacity-0 transition-all duration-300"
+  >
+    <div class="flex items-center justify-between gap-3">
+      <div class="flex flex-col">
+        <span class="text-xs font-bold text-[#f6f7eb] leading-tight">Zaki.co</span>
+        <span class="text-[10px] text-[#e94f37] flex items-center gap-1 font-medium">
+          <span class="sonar-wrapper w-2 h-2">
+            <span class="sonar-ring"></span>
+            <span class="relative w-1.5 h-1.5 rounded-full bg-[#e94f37]"></span>
+          </span>
+          Available for Q4
+        </span>
+      </div>
+      <button 
+        onclick="openScheduler()"
+        class="btn-fiery flex-1 max-w-[200px] min-h-[44px] px-4 py-2.5 rounded-xl font-extrabold text-xs tracking-tight flex items-center justify-center gap-1.5 cursor-pointer"
+      >
+        <span>⚡ Book a Call</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= SCHEDULER MODAL (CAL.COM EMBED) ================= -->
+  <div 
+    id="scheduler-modal" 
+    class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6"
+    role="dialog" 
+    aria-modal="true"
+  >
+    <!-- Backdrop Blur -->
+    <div onclick="closeScheduler()" class="fixed inset-0 bg-black/85 backdrop-blur-md transition-opacity"></div>
+
+    <!-- Modal Box with Specular Highlights -->
+    <div 
+      class="relative w-full max-w-2xl rounded-2xl glass-panel p-4 sm:p-6 z-10 flex flex-col max-h-[92vh] overflow-hidden"
+    >
+      <!-- Header -->
+      <div class="flex items-center justify-between pb-3.5 border-b border-[#f6f7eb]/10 mb-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-[#e94f37]/15 border border-[#e94f37]/30 text-[#e94f37] flex items-center justify-center font-bold text-sm shadow-sm">
+            ⚡
+          </div>
+          <div>
+            <h3 class="font-bold text-[#f6f7eb] text-sm sm:text-base">Book 15-Min Discovery Call</h3>
+            <p class="text-[11px] text-[#abb1a6]">Direct strategy session with Zaki</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Fallback direct link button in case of third-party iframe blocks -->
+          <a 
+            href="https://cal.com/workwithzaki-ybhyz4/project-discovery-call" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#272c2e] hover:bg-[#343a3d] border border-[#f6f7eb]/10 text-[#e94f37] text-xs font-semibold transition-colors"
+          >
+            <span>Open in Cal.com</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+
+          <button 
+            onclick="closeScheduler()"
+            class="w-8 h-8 rounded-lg bg-[#272c2e] hover:bg-[#343a3d] border border-[#f6f7eb]/10 text-[#abb1a6] hover:text-[#f6f7eb] flex items-center justify-center transition-colors cursor-pointer"
+            aria-label="Close modal"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Cal.com Live Embed Container -->
+      <div class="w-full flex-1 min-h-[460px] sm:min-h-[520px] rounded-xl overflow-hidden bg-[#191c1e] border border-[#f6f7eb]/10 flex flex-col">
+        <iframe 
+          id="cal-iframe"
+          src="https://cal.com/workwithzaki-ybhyz4/project-discovery-call?embed=true" 
+          class="w-full flex-1 border-0 rounded-xl"
+          title="Schedule Intro Call with Zaki"
+          allow="camera; microphone; autoplay; fullscreen"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Mobile direct link banner below iframe -->
+      <div class="pt-2 sm:hidden flex items-center justify-between text-[11px] text-[#abb1a6]">
+        <span>Trouble loading inside modal?</span>
+        <a 
+          href="https://cal.com/workwithzaki-ybhyz4/project-discovery-call" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-[#e94f37] font-bold underline"
+        >
+          Open directly in Cal.com ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INLINE JAVASCRIPT ================= -->
+  <script>
+    const CAL_URL = "https://cal.com/workwithzaki-ybhyz4/project-discovery-call";
+
+    // 1. Scheduler Modal Functionality
+    function openScheduler() {
+      if (window.Cal && typeof window.Cal === 'function') {
+        try {
+          window.Cal("modal", {
+            calLink: "workwithzaki-ybhyz4/project-discovery-call",
+            config: { layout: "month_view", theme: "dark" }
+          });
+          return;
+        } catch (e) {
+          console.warn("Cal SDK popup fallback to custom modal", e);
+        }
+      }
+
+      const modal = document.getElementById('scheduler-modal');
+      const iframe = document.getElementById('cal-iframe');
+      if (iframe && !iframe.getAttribute('src')) {
+        iframe.src = CAL_URL + "?embed=true";
+      }
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeScheduler() {
+      const modal = document.getElementById('scheduler-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeScheduler();
+      }
+    });
+
+    // 2. Mobile Bottom Bar Scroll Trigger
+    window.addEventListener('scroll', function() {
+      const bottomBar = document.getElementById('mobile-bottom-bar');
+      const hero = document.getElementById('hero');
+      if (!bottomBar || !hero) return;
+
+      if (window.scrollY > 280) {
+        bottomBar.classList.remove('translate-y-full', 'opacity-0');
+        bottomBar.classList.add('translate-y-0', 'opacity-100');
+      } else {
+        bottomBar.classList.remove('translate-y-0', 'opacity-100');
+        bottomBar.classList.add('translate-y-full', 'opacity-0');
+      }
+    }, { passive: true });
+
+    // 3. Subtle Scroll-Reveal System (IntersectionObserver)
+    function initScrollReveal() {
+      const revealElements = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        revealElements.forEach(el => el.classList.add('active'));
+        return;
+      }
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+    }
+
+    // 4. Subtle Stats Number Counting Animation
+    function initStatCounter() {
+      const metricsStrip = document.getElementById('metrics-strip');
+      if (!metricsStrip || !('IntersectionObserver' in window)) return;
+
+      let animated = false;
+      const counterObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !animated) {
+          animated = true;
+          const counters = document.querySelectorAll('.stat-counter');
+          counters.forEach(counter => {
+            const target = parseFloat(counter.getAttribute('data-target'));
+            const prefix = counter.getAttribute('data-prefix') || '';
+            const suffix = counter.getAttribute('data-suffix') || '';
+            const decimals = parseInt(counter.getAttribute('data-decimals') || '0', 10);
+            const duration = 900;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              // Ease-out cubic curve
+              const easeProgress = 1 - Math.pow(1 - progress, 3);
+              const currentVal = target * easeProgress;
+              
+              counter.textContent = prefix + (decimals > 0 ? currentVal.toFixed(decimals) : Math.round(currentVal)) + suffix;
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = prefix + (decimals > 0 ? target.toFixed(decimals) : target) + suffix;
+              }
+            }
+
+            requestAnimationFrame(updateCounter);
+          });
+          counterObserver.disconnect();
+        }
+      }, { threshold: 0.3 });
+
+      counterObserver.observe(metricsStrip);
+    }
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', () => {
+      initScrollReveal();
+      initStatCounter();
+    });
+  </script>
+</body>
+</html>
